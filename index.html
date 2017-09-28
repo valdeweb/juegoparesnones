@@ -1,0 +1,81 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link type="text/css" href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+        
+      <div class='container text-center'>
+            
+        <div class='pantalla' id='Bienvenida'>
+            <h1>Hola amigo, <br>¿quieres jugar a pares y nones?</h1>
+               
+                
+                <button id='jugar' class='btn btn-block btn success'>SI</button>
+                <button id='jugar' class='btn btn-block btn success'>NO</button>
+               
+         </div>
+            
+        <div class='pantalla' id='EligeSi'>
+             <form>
+                 <label>ELIGE PAR O IMPAR</label>
+                   <div class="radio">
+                     <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>PAR
+                     </label>
+                  </div>
+        
+                   <div class="radio">
+                    <label>
+                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">IMPAR
+                    </label>
+                   </div>
+              </form> 
+            
+         </div>
+          
+        <div class='pantalla' id='EligeNo'>
+           <h1>Ufff, te animo a jugar porque es muy divertido</h1>
+            <button id='jugar' class='btn btn-block btn success'>quiero jugar</button>
+        </div>
+          
+        <div class='pantalla' id='EligeNumero'>
+            <label for="elegir">
+             <p>Elige un numero del 1 al 10</p>
+             <select id="elegir" name="elegir">
+               <option value="">Elige un número</option>
+               <option value="1">1</option> 
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5">5</option> 
+               <option value="6">6</option>
+               <option value="7">7</option>
+               <option value="8">8</option>
+               <option value="9">9</option>
+               <option value="10">10</option>
+             </select> 
+            </label>
+        </div>
+          
+        <div class='pantalla' id='Maquina'>
+            <p>la máquina está eligiendo</p>
+            <img src="img/espiral.gif">
+        </div>
+        <div class='pantalla' id='Resultado'>
+            <p>Enhorabuena, ha ganado el jugador</p>
+            <p>Has perdido, ¡ha ganado la máquina!</p>
+          
+        </div>
+          
+          
+          
+    </div>  
+    
+  </body>
+</html>
