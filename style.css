@@ -10,6 +10,13 @@ body{
 #bienvenida{
     background-color: forestgreen;
 }
-/*   #eligeSi,#eligeNo,#eligeNumero,#maquina,#resultado{
-    display: none;
+
+#maquina{
+    background-color: yellow;
 }
+figure{
+    padding: 1em;
+}
+ #eligeSi,#eligeNo,#eligeNumero,#maquina,#resultado{ 
+    display: none;
+}/* esto es para que vayan saliendo las pantallas segun vamos pinchando en los botones

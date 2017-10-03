@@ -7,6 +7,7 @@
 		<meta name="viewport" content="initial-scale=1.0">
         <link type="text/css" href="style.css" rel="stylesheet">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- nos copiamos esto de bootstrap cdn en internet copiando el enlace de html-->
+   
 	</head>
 
 	<body>
@@ -16,15 +17,14 @@
         <div class='pantalla' id='bienvenida'>
             <h1>Hola amigo, <br>¿quieres jugar a pares y nones?</h1>
                
-                
-                <button id='jugar' class='btn btn-block btn success'>SI</button>
-                <button id='jugar' class='btn btn-block btn success'>NO</button>
-               
+                <button id='dispararSi' class='btn btn default'>SI</button>
+                <button id='dispararNo' class='btn btn-default'>NO</button>
          </div>
+          
             
         <div class='pantalla' id='eligeSi'>
              <form>
-                 <label>ELIGE PAR O IMPAR</label>
+                 <h1>ELIGE PAR O IMPAR</h1>
                    <div class="radio">
                      <label>
                         <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>PAR
@@ -35,19 +35,25 @@
                     <label>
                         <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">IMPAR
                     </label>
+                       <figure>
+                          <img src="img/emoticono.jpg" width="100" height="80">
+                       </figure>
                    </div>
               </form> 
             
          </div>
           
+          
         <div class='pantalla' id='eligeNo'>
-           <h1>Pues tu te lo pierdes</h1>
+           <h1>Anímate, es muy divertido!!</h1>
+            <button id='jugar' class='btn btn default'>JUGAR</button>
             
         </div>
           
+          
         <div class='pantalla' id='eligeNumero'>
             <label for="elegir">
-             <p>Elige un numero del 1 al 10</p>
+             <p>ELIGE UN NÚMERO DEL 1 AL 10</p>
              <select id="elegir" name="elegir">
                <option value="">Elige un número</option>
                <option value="1">1</option> 
@@ -64,17 +70,28 @@
             </label>
         </div>
           
+          
         <div class='pantalla' id='maquina'>
-            <p>la máquina está eligiendo</p>
-            <img src="img/espiral.gif">
+            <p>LA MÁQUINA ESTÁ ELIGIENDO</p>
+            <img src="img/pendulo.gif">
         </div>
+          
+          
         <div class='pantalla' id='resultado'>
-            <p>Enhorabuena, ha ganado el jugador</p>
-            <p>Has perdido, ¡ha ganado la máquina!</p>
+            <p>¡¡ENHORABUENA, HAS GANADO!!</p> 
+            <figure>
+               <img src="img/emoticonoalegre.gif">
+            </figure>
+            <p>UFFF HAS PERDIDO, ¡LA MÁQUINA GANA!</p>
+            <figure>
+               <img src="img/emoticonotriste.jpg">
+            </figure>
           
-        </div>
+        </div><!-- fin container-->
           
+         <script type="text/javascript" src="script.js"></script> <!--el script siempre se enlaza aqui abajo-->
           
+          <script type="text/javascript" src="consola.js"></script>
           
     </div>  
     
