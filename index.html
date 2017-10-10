@@ -21,59 +21,52 @@
                 <button id='dispararNo' class='btn btn-default'>NO</button>
          </div>
           
+          
+        <div class='pantalla' id='eligeNo'>
+            <h1>Anímate, es muy divertido!!</h1>
+            <button id='jugar' class='btn btn default'>JUGAR</button>
+            
+        </div>
+          
             
         <div class='pantalla' id='eligeSi'>
-             <form>
-                 <h1>ELIGE PAR O IMPAR</h1>
+                 <h1>ELIGE PARES O NONES</h1>
                    <div class="radio">
                      <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>PAR
+                        <input type="radio" name='paresNones' id='pares' value="pares">PARES
                      </label>
                   </div>
         
                    <div class="radio">
                     <label>
-                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">IMPAR
+                        <input type="radio" name='paresNones' id='nones' value="nones">NONES
                     </label>
                        <figure>
                           <img src="img/emoticono.jpg" width="100" height="80">
                        </figure>
                    </div>
-              </form> 
+            <button id='siguiente' class='btn btn default'>Siguiente</button>
             
          </div>
           
           
-        <div class='pantalla' id='eligeNo'>
-           <h1>Anímate, es muy divertido!!</h1>
-            <button id='jugar' class='btn btn default'>JUGAR</button>
-            
-        </div>
-          
-          
         <div class='pantalla' id='eligeNumero'>
             <label for="elegir">
-             <p>ELIGE UN NÚMERO DEL 1 AL 10</p>
-             <select id="elegir" name="elegir">
-               <option value="">Elige un número</option>
-               <option value="1">1</option> 
-               <option value="2">2</option>
-               <option value="3">3</option>
-               <option value="4">4</option>
-               <option value="5">5</option> 
-               <option value="6">6</option>
-               <option value="7">7</option>
-               <option value="8">8</option>
-               <option value="9">9</option>
-               <option value="10">10</option>
-             </select> 
+            ELIGE UN NÚMERO DEL 0 AL 10
+             <input min=0 max=10 type='number' id="elegir" name="elegir">
+               
             </label>
+            
+             <button id='pulsaAqui' class='btn btn default'>Pulsa aqui</button>
+            
         </div>
           
           
         <div class='pantalla' id='maquina'>
             <p>LA MÁQUINA ESTÁ ELIGIENDO</p>
             <img src="img/pendulo.gif">
+            
+             <button id='conocerResultado' class='btn btn default'>Conocer resultado</button>
         </div>
           
           
@@ -82,18 +75,19 @@
             <figure>
                <img src="img/emoticonoalegre.gif">
             </figure>
+         
             <p>UFFF HAS PERDIDO, ¡LA MÁQUINA GANA!</p>
             <figure>
                <img src="img/emoticonotriste.jpg">
             </figure>
+          </div>
           
-        </div><!-- fin container-->
           
          <script type="text/javascript" src="script.js"></script> <!--el script siempre se enlaza aqui abajo-->
           
-          <script type="text/javascript" src="consola.js"></script>
+         
           
-    </div>  
+    </div> <!--fin de container-->
     
   </body>
 </html>

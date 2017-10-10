@@ -19,4 +19,4 @@ figure{
 }
  #eligeSi,#eligeNo,#eligeNumero,#maquina,#resultado{ 
     display: none;
-}/* esto es para que vayan saliendo las pantallas segun vamos pinchando en los botones
+}/* esto es para ocultar todas las pantallas y que vayan saliendo según vamos pinchando en los botones
