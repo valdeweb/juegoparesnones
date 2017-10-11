@@ -36,35 +36,38 @@ function pulsaAqui(){
     }
     
    if(nones.checked){
-      
  var jugador=nones.value;
  var maquina=pares.value;
     }
     console.log(jugador);
     console.log(maquina);
+    
  var jugadaJugador=document.getElementById('elegir').value;
     console.log(jugadaJugador);
+    
     jugadaMaquina=Math.floor(Math.random()*11);
     console.log(jugadaMaquina);
- var resultado=jugadaJugador+jugadaMaquina;
-    console.log(resultado);
-   
     
-//   console.log(resultado);
-//   var jugador ='pares';
-//   var maquina='nones';
-//   var jugadaJugador=7;
-//   console.log(jugadaJugador);
-//   var jugadaMaquina=Math.floor(Math.random()*11);
-//   console.log(jugadaMaquina);
-//   var resultado=jugadaJugador+jugadaMaquina;
-//   console.log(resultado);
-//   var resultado =resultado%2;
-//   console.log(resultado);
-//   if(resultado===0){
-//   console.log('ganan pares')
-//  }
-//   if(resultado===1){
-//   console.log('ganan nones')
-//  }
- }
+ var texto='la maquina ha elegido'+jugadaMaquina;
+    texto+='tu elegiste'+jugadaJugador;
+   texto+='y'+jugador; document.getElementById('display').innerHTML=texto;
+    
+ var suma=jugadaJugador+jugadaMaquina;
+    console.log(suma);
+    var modulo =suma%2;
+    var resultado;
+    if(modulo===0)resultado='pares';
+    if(modulo===1)resultado='nones';
+    
+    if(jugador===resultado){
+      document.getElementById('ganajugador').style.display='block' ; 
+         document.getElementById('ganamaquina').style.display='none' ;
+        
+    }
+    if(jugador!==resultado){
+         document.getElementById('ganajugador').style.display='none' ; 
+         document.getElementById('ganamaquina').style.display='block' ;
+        
+    }
+   
+}
